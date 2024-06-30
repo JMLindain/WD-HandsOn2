@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero 5</title>
+    <style>
+        body {
+            font-family: Montserrat, sans-serif;
+            color: #FFF5F5;
+            background-color: #111;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-container {
+            position: relative;
+            overflow: hidden;
+            background-image: url('/pages/hero-5/assets/img/keshi-BG5.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Ensure the container fills the entire viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px;
+            background-color: transparent;
+        }
+
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul div {
+            margin-right: 50px;
+        }
+
+        nav ul div a {
+            text-decoration: none;
+            color: #FFF5F5;
+            font-size: 20px;
+        }
+
+        nav ul div:nth-child(6) a {
+            color: #FF4136;
+            text-decoration: underline;
+        }
+
+        nav ul div a:hover {
+            color: #FF4136;
+        }
+
+        .hero {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex: 1; /* Allow the hero section to take up remaining space */
+        }
+
+        .upper-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .upper-left, .upper-middle, .upper-right, .lower-left, .lower-middle, .lower-right {
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            margin: 0;
+        }
+
+        .upper-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 80px;
+            margin-left: 30px;
+        }
+
+        .upper-left .text-box {
+            text-align: left;
+        }
+
+        .upper-left .text-box h1 {
+            font-size: 60px;
+            margin: 0;
+            margin-left: 30px;
+        }
+
+        .upper-left .text-box p {
+            margin: 0;
+            margin-left: 30px;
+        }
+
+        .upper-right .text-box p {
+            text-align: left;
+            margin-top: 95px;
+            margin-right: 50px;
+            font-size: 21px;
+        }
+
+        .upper-middle h1 {
+            font-family: Montserrat, sans-serif;
+            font-size: 78px;
+            margin-top: -45px;
+            margin-left: 55px;
+        }
+
+        .lower-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .lower-left, .lower-middle, .lower-right {
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            margin: 0;
+        }
+
+        .lower-left img, .lower-right img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-top: 64px;
+        }
+
+        .lower-middle .red-button {
+            background-color: #FF4136;
+            color: #FFF5F5;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 94px;
+            box-shadow: 0 0 20px rgba(255, 65, 54, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Container -->
+    <div class="background-container">
+        <!-- Navigation Bar -->
+        <header>
+            <div class="logo">
+                <img src="/pages/hero-5/assets/img/keshi-logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav-buttons">
+                    <div><a href="/index.html">Home</a></div> <!-- HOME URL  -->
+                    <div><a href="/pages/hero-1/index.html">Hero 1</a></div> <!-- HERO 1 - TREES -->
+                    <div><a href="/pages/hero-2/index.html">Hero 2</a></div> <!-- HERO 2 - STEAM TOP GAMES -->
+                    <div><a href="/pages/hero-3/index.html">Hero 3</a></div> <!-- HERO 3 - MENTAL HEALTH -->
+                    <div><a href="/pages/hero-4/index.html">Hero 4</a></div> <!-- HERO 4 - VALO -->
+                    <div><a href="/pages/hero-5/index.html">Hero 5</a></div> <!-- HERO 5 - CARS -->
+                    <div><a href="/pages/card-gallery/index.html">Cards Gallery</a></div> <!-- CARDS GALLERY -->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Upper 3 Divs -->
+            <div class="upper-container">
+                <div class="upper-left">
+                    <div class="text-box">
+                        <h1>186</h1>
+                        <p>Horsepower at 6,000 rpm</p>
+                    </div>
+                    <div class="text-box">
+                        <h1>2.5L</h1>
+                        <p>SKYACTIV-G 4-cylinder Engine</p>
+                    </div>
+                </div>
+                <div class="upper-middle">
+                    <h1>Meet Keshi</h1>
+                </div>
+                <div class="upper-right">
+                    <div class="text-box">
+                        <p>The 2020 Mazda 3 Hatchback “Keshi” is<br>
+                            a perfect blend of elegance and power,<br>
+                            featuring not only its sleek design and a<br>
+                            186-horsepower SKYACTIV-G engine,<br>
+                            but also it’s great personal upgrades.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lower 3 Divs -->
+            <div class="lower-container">
+                <div class="lower-left">
+                    <img src="/pages/hero-5/assets/img/mazda-corp.png" alt="Resizable Image" class="resizable-image">
+                </div>
+                <div class="lower-middle">
+                    <a href="#" class="red-button">Click Here</a>
+                </div>
+                <div class="lower-right">
+                    <img src="/pages/hero-5/assets/img/brembo-logo.png" alt="Resizable Image" class="resizable-image">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('/pages/hero-3/assets/img/background.png'); /* BACKGROUND IMAGE */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #2E7032;
+    overflow: hidden; /* overflow hidden to prevent scrolling */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.navbar .logo img {
+    height: 50px;
+    margin-left: auto;
+}
+
+.navbar .nav-buttons {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.navbar .nav-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.navbar .nav-buttons a.active {
+    color: #2E7032; /* color for active link */
+}
+
+.navbar .nav-buttons a:hover {
+    color: #2E7032; /* hover color */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: transparent; /* transparent hero section */
+    position: relative;
+    z-index: 0; /* so that hero section is behind navbar */
+    padding: 20px;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+    margin-left: -750px;
+    margin-top: -170px;
+}
+
+/* COLOR FOR MENTAL HEALTH */
+.hero-content h1:first-child {
+    color: #4ABC56;
+    font-size: 3em;
+    margin: 0;
+}
+
+/* COLOR FOR M A T T E R S*/
+.hero-content h1:last-child {
+    color: #2E7032;
+    font-size: 3em;
+    margin: 0;
+}
+
+/* COLOR FOR PARAGRAPH TEXT */
+.hero-content p {
+    color: #4ABC56;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.hero-content .buttons {
+    display: flex;
+}
+
+/* HERO BUTTONS */
+.hero-content .buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+}
+
+.hero-content .buttons .get-help {
+    background-color: #388E3C;
+}
+
+.hero-content .buttons .hdiwjd {
+    background-color: #388E3C;
+}
+
+.hero-content .buttons button:hover {
+    color: #2E7032; /* Change text color on hover */
+}

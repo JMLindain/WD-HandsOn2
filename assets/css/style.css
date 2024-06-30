@@ -1,0 +1,87 @@
+@font-face {
+    font-family: myFont;
+    src: url('/assets/fonts/Stardew_Valley.ttf');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url('/assets/img/background.jpg'); /* BG IMG */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden; /* Disable scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    align-items: center;
+    padding: 14px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: none; /* Remove background */
+}
+
+.navbar .nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-buttons a {
+    border-style: ridge;
+    border-width: 1.5mm;
+    border-color: #863306;
+    text-decoration: none;
+    color: #CE5252;
+    background-color: #FFD789;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: myFont;
+    font-size: 25px;
+    transition: background-color 0.3s, border 0.2s, color 0.2s;
+}
+
+.navbar .nav-buttons a:hover {
+    background-color: #FF9933;
+    color: #FFF3CC;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    max-width: 100%; /* Ensure hero content fits within the viewport */
+}
+
+.hero img {
+    max-width: 50%;
+    height: auto;
+}
+
+.hero .explore {
+    border-style: ridge;
+    border-width: 1.5mm;
+    border-color: #863306;
+    color: #CE5252;
+    background-color: #FFD789;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: myFont;
+    margin-top: 20px;
+    font-size: 40px;
+    max-width: 80%;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}

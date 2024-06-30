@@ -1,0 +1,327 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+nav {
+    display: flex;
+    justify-content: flex-end; /* Move navigation to the right side */
+    gap: 50px;
+    margin-right: 20px; /* Add some margin to the right */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 60px; /* Add space between navigation bar and cards */
+    padding-bottom: 60px; /* Add space at the bottom */
+}
+.card {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners for cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* For blank cards */
+    perspective: 1000px; /* Needed for 3D flip effect */
+}
+.card-title {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.card-price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.card-price-triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 80px solid blue;
+    border-left: 80px solid transparent;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+.heart-static {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    background-color: red; /* Initial background color */
+    mask: 
+        radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+        radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+        linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+    clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+}
+.heart-static img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Show the image */
+}
+.heart {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    background-color: red; /* Initial background color */
+    transition: background-color 0.5s; /* Smooth transition */
+    mask: 
+        radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+        radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+        linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+    clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+}
+.heart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Show the image */
+    opacity: 0; /* Hide the image initially */
+    transition: opacity 0.5s; /* Smooth transition */
+}
+.heart:hover {
+    background-color: transparent; /* Make background transparent on hover */
+}
+.heart:hover img {
+    opacity: 1; /* Show the image on hover */
+}
+.card-background-1 {
+    background: url('/assets/img/background.jpg') no-repeat center center;
+    background-size: cover;
+}
+.card-background-2 {
+    background: url('/pages/card-gallery/assets/img/steam.png') no-repeat center center;
+    background-size: cover;
+}
+.card-background-3 {
+    background: url('/pages/card-gallery/assets/img/background.png') no-repeat center center;
+    background-size: cover;
+}
+.card-background-4 {
+    background-color: #0F1822; /* Set background color for Static Card 4 */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.card-background-4 img {
+    max-width: 160px; /* Adjust the size as needed */
+}
+.card-background-4 .button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F0F0F0;
+    background-color: #FF4654;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-background-5 {
+    background-color: #1B1B1B; /* Set background color for Static Card 5 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #FFF5F5; /* Font color for text */
+}
+.card-background-5 img {
+    max-width: 410px; /* Adjust the size as needed */
+}
+.card-background-5 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-background-5 .text h1 {
+    margin: 0;
+    font-size: 30px;
+}
+.card-background-5 .button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F0F0F0;
+    background-color: #FF4136;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 60px; /* Add gap between buttons */
+}
+.card-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745; /* Make both buttons green */
+    border: none;
+    border-radius: 10px; /* Rounded corners for buttons */
+    cursor: pointer;
+}
+.animated-card-1 {
+    transition: box-shadow 0.5s;
+}
+.animated-card-1:hover {
+    box-shadow: 0 0 30px rgba(255, 105, 180, 1); /* Higher intensity romantic pink shadow on hover */
+}
+.animated-card-2 .gift-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+    transition: transform 0.5s;
+}
+.animated-card-2:hover .gift-wrap {
+    transform: translateY(-100%);
+}
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.animated-card-3:hover .flip-card {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px; /* Ensure both sides have rounded corners */
+}
+.flip-card-back {
+    background-color: #f8f8f8; /* Background color for the back of the card */
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Increased font size */
+    color: #333; /* Text color */
+    font-weight: bold;
+}
+.animated-card-4 {
+    transition: box-shadow 0.5s;
+}
+.animated-card-4:hover {
+    box-shadow: 0 0 40px rgba(255, 0, 0, 1); /* More intense red glowing effect */
+}
+.animated-card-4 .button {
+    transition: box-shadow 0.5s;
+}
+.animated-card-4 .button:hover {
+    box-shadow: 0 0 40px rgba(255, 0, 0, 1); /* More intense red glowing effect */
+}
+.animated-card-5 .keshi-img {
+    transition: transform 0.5s;
+}
+.animated-card-5:hover .keshi-img {
+    transform: scale(1.2);
+}
+.animated-card-5 .arrow {
+    position: absolute;
+    width: 200px; /* Extend arrows outside the card */
+    height: 2px;
+    background-color: white;
+}
+.animated-card-5 .arrow-1 {
+    top: 30%;
+    left: -200px; /* Position arrows outside the card */
+    transform: rotate(45deg);
+    transition: opacity 0.5s, transform 0.5s;
+    opacity: 0;
+}
+.animated-card-5 .arrow-2 {
+    top: 70%;
+    left: -200px; /* Position arrows outside the card */
+    transform: rotate(-45deg);
+    transition: opacity 0.5s, transform 0.5s;
+    opacity: 0;
+}
+.animated-card-5:hover .arrow-1,
+.animated-card-5:hover .arrow-2 {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.animated-card-5 .info-box {
+    position: absolute;
+    background-color: #131313; /* Background color for text boxes */
+    color: #FFF5F5; /* Font color for text boxes */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s, transform 0.5s;
+    opacity: 0;
+}
+.animated-card-5 .info-box-1 {
+    top: 20%;
+    left: -220px; /* Position outside the card */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+.animated-card-5 .info-box-2 {
+    top: 70%;
+    left: -220px; /* Position outside the card */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+.animated-card-5:hover .info-box-1,
+.animated-card-5:hover .info-box-2 {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.learn-more-button {
+    transition: box-shadow 0.5s;
+}
+.learn-more-button:hover {
+    box-shadow: 0 0 40px rgba(255, 0, 0, 1); /* More intense red glowing effect */
+}
