@@ -4,7 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url('/pages/hero-1/assets/img/background.png'); /* BG IMG */
+    background-image: url(../img/background.png); /* BG IMG */
     background-size: cover;
     background-position: center;
 }

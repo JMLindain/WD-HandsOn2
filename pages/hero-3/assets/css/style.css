@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('/pages/hero-3/assets/img/background.png'); /* BACKGROUND IMAGE */
+    background-image: url(../img/background.png); /* BACKGROUND IMAGE */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

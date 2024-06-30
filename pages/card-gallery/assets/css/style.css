@@ -122,15 +122,15 @@ nav a:hover {
     opacity: 1; /* Show the image on hover */
 }
 .card-background-1 {
-    background: url('/assets/img/background.jpg') no-repeat center center;
+    background: url(../img/background1.jpg) no-repeat center center;
     background-size: cover;
 }
 .card-background-2 {
-    background: url('/pages/card-gallery/assets/img/steam.png') no-repeat center center;
+    background: url(../img/steam.png) no-repeat center center;
     background-size: cover;
 }
 .card-background-3 {
-    background: url('/pages/card-gallery/assets/img/background.png') no-repeat center center;
+    background: url(../img/background2.png) no-repeat center center;
     background-size: cover;
 }
 .card-background-4 {

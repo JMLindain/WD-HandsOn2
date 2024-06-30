@@ -6,7 +6,7 @@ html, body {
     font-size: 14px;
     overflow: hidden;
     background-color: #111;
-    background: url('https://media.giphy.com/media/9lHsP26ijVJwylXsff/giphy.gif') center/cover no-repeat;
+    background: url(https://media.giphy.com/media/9lHsP26ijVJwylXsff/giphy.gif) center/cover no-repeat;
 }
 
 .navbar {

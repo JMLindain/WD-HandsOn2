@@ -1,0 +1,163 @@
+body {
+    font-family: Montserrat, sans-serif;
+    color: #FFF5F5;
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.background-container {
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/keshi-BG5.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensure the container fills the entire viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+    background-color: transparent;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul div {
+    margin-right: 50px;
+}
+
+nav ul div a {
+    text-decoration: none;
+    color: #FFF5F5;
+    font-size: 20px;
+}
+
+nav ul div:nth-child(6) a {
+    color: #FF4136;
+    text-decoration: underline;
+}
+
+nav ul div a:hover {
+    color: #FF4136;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1; /* Allow the hero section to take up remaining space */
+}
+
+.upper-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.upper-left, .upper-middle, .upper-right, .lower-left, .lower-middle, .lower-right {
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+
+.upper-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    margin-left: 30px;
+}
+
+.upper-left .text-box {
+    text-align: left;
+}
+
+.upper-left .text-box h1 {
+    font-size: 60px;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.upper-left .text-box p {
+    margin: 0;
+    margin-left: 30px;
+}
+
+.upper-right .text-box p {
+    text-align: left;
+    margin-top: 95px;
+    margin-right: 50px;
+    font-size: 21px;
+}
+
+.upper-middle h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 78px;
+    margin-top: -45px;
+    margin-left: 55px;
+}
+
+.lower-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.lower-left, .lower-middle, .lower-right {
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+
+.lower-left img, .lower-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.lower-middle .red-button {
+    background-color: #FF4136;
+    color: #FFF5F5;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 94px;
+    box-shadow: 0 0 20px rgba(255, 65, 54, 0.8);
+}
